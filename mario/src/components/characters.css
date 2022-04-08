@@ -1,0 +1,18 @@
+.button{
+  padding: 15px;
+  font-size: 10px;
+  background-color: rgb(238, 11, 11);
+  color: white
+}
+
+.name-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.character-container{
+  display:flex;
+  justify-content: space-around;
+}
+

@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Characters from "./components/Characters";
+import Character from "./components/Character";
 import Series from "./components/Series";
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/characters/*" element={<Characters data={data} />} />
+        <Route path="/characters" element={<Characters data={data} />} />
+        <Route path="/characters/:name" element={<Character data={data} />} />
         <Route path="/series" element={<Series data={data} />} />
       </Routes>
     </div>

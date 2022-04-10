@@ -1,23 +1,23 @@
-import {useState, useEffect} from 'react'
+import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './characters.css'
 
-export default function Characters({ data }) {
-  
-  const [uniqueCharacters, setUniqueCharacters] = useState([])
+export default function Series({ data }) {
+  const [uniqueCharacters, setUniqueCharacters] = useState()
   
   useEffect(() => {
     let uniqueCharacterArray = [...new Map(data.map((char) => [char.character, char])).values()];
     console.log(uniqueCharacterArray)
     setUniqueCharacters(uniqueCharacterArray)    
   }, [data])
-  
-    return (
+
+     return (
       <div className='name-container'> 
         <div className='character-container'>
           {uniqueCharacters.map((character) => (
             <div className='characters'>
-              <Link to={`/characters/${character.character}`}>
+              <Link to={`/sports/${character.character}`}>
                 <button className='character-btn'>{character.character}</button>
               </Link>
               <img src={character.image} alt={character.name}/>
@@ -26,4 +26,5 @@ export default function Characters({ data }) {
         </div>
       </div>
   )
+  
 }

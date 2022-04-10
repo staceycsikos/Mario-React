@@ -1,22 +1,92 @@
 .button{
   padding: 15px;
   font-size: 10px;
-  background-color: rgb(238, 11, 11);
+  background-color: red;
   color: white
 }
 
-.name-container{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
+.name-container, .character-container{
+  margin-top: 45px;
 }
 
-.character-container{
+.image-container{
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.character-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 45px;
+  grid-column-gap: 10px;
+}
+
+.characters{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
 }
 
 
 img {
   height: 300px
+}
+
+.character-btn{
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.nav-btn{
+  background-color: rgb(177 99 44);
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body{
+  background-image: url("../../public/marioClouds.png");
+}
+
+.title{
+  font-family: 'Rampart One', cursive;
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-width: 5px;
+  background-color: black;
+  border-color: transparent;
+} 
+
+.intro {
+  background-color: aliceblue;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: 'Rock Salt', cursive;
+}
+
+.intro-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }

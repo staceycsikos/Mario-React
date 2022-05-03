@@ -12,7 +12,6 @@ export default function Navbar() {
         <nav className='btn-container'>
           <Link to="/"><button className='nav-btn'>Home</button></Link>
           <Link to="/characters"><button className='nav-btn'>Super Mario</button></Link>
-          <Link to="/sports"><button className='nav-btn'>Mario Sports</button></Link>
         </nav>
       </header>
     </div>
